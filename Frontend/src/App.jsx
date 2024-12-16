@@ -2,8 +2,10 @@ import './App.css'
 function App() {
 
   return (
-    <div className=' bg-black  text-blue-400 p-5 text-center m-5 '>
+    <div className=' text-blue-400  '>
       Chatter Box
+       <button className="btn btn-primary">Primary</button>
+      
     </div>
   )
 }
