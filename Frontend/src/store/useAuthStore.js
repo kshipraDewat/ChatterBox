@@ -1,16 +1,12 @@
 import { create } from "zustand";
 import { axiosInstance } from "../lib/axios";
-<<<<<<< HEAD
 import toast from "react-hot-toast";
-=======
->>>>>>> 60e6126fe36535b74058effecee41ca84266f8ff
 
 
 export const useAuthStore = create((set) => ({
     authUser: null,
     isSigningUp: false,
     isLoggingIn: false,
-<<<<<<< HEAD
     isUpdatingProfile: false,
 
     isCheckingAuth: true,
@@ -41,7 +37,6 @@ export const useAuthStore = create((set) => ({
             set({ isSigningUp: false });
         }
     },
-=======
     isUpdatingProfile : false,
 
     isCheckingAuth: true, 
@@ -58,5 +53,4 @@ export const useAuthStore = create((set) => ({
             set({isCheckingAuth:false})
         }
     }
->>>>>>> 60e6126fe36535b74058effecee41ca84266f8ff
 }))
