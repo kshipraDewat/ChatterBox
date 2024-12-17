@@ -1,4 +1,10 @@
-import React, { useState } from 'react'
+import { useState } from "react";
+import { useAuthStore } from "../store/useAuthStore";
+import { Eye, EyeOff, Loader2, Lock, Mail, MessageSquare, User } from "lucide-react";
+import { Link } from "react-router-dom";
+
+import AuthImagePattern from "../components/AuthImagePattern";
+import toast from "react-hot-toast";
 
 const SignUpPage = () => {
   const [showPassword, setShowPassword] = useState(false)
@@ -27,7 +33,6 @@ const SignUpPage = () => {
   }
   return (
     <div className="min-h-screen grid lg:grid-cols-2">
-      {/* left side */}
       <div className="flex flex-col justify-center items-center p-6 sm:p-12">
         <div className="w-full max-w-md space-y-8">
           {/* LOGO */}
