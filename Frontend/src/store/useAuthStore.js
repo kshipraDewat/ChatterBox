@@ -48,7 +48,7 @@ export const useAuthStore = create((set) => ({
             toast.error(error.response.data.message);
         }
     },
-    login: async (data) => {
+    login: async(data) => {
         set({ isLoggingIn: true });
         try {
           const res = await axiosInstance.post("/auth/login", data);
