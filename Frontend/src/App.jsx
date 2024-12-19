@@ -16,12 +16,12 @@ const App = () => {
  const {authUser, chechAuth, isCheckingAuth, onlineUsers } = useAuthStore()
  const { theme } = useThemeStore();
 
- console.log('online users', onlineUsers)
+
  useEffect(()=>{
   chechAuth()
  },[chechAuth])
 
- console.log({authUser})
+
 
  if(isCheckingAuth && !authUser) return (
   <div className='flex items-center justify-center h-screen'>
